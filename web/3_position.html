@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Common styles for all elements */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(93, 12, 223, 0.253);
+      border: 1px solid rgb(0, 0, 0);
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    /* Relative Positioning */
+    .relative-box {
+      position: relative;
+      top: 50px;
+      left: 50px;
+      text-align: center;
+    }
+
+    /* Absolute Positioning */
+    .absolute-box {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      text-align:center;
+    }
+
+    /* Fixed Positioning */
+    .fixed-box {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box relative-box">
+    Relative Position
+  </div>
+
+  <div class="box absolute-box">
+    Absolute Position
+  </div>
+
+  <div class="box fixed-box">
+    Fixed Position
+  </div>
+</body>
+</html>

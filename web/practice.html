@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="return Validate()">
+        Username:<input type="text" id="name"><br>
+        Password:<input type="password" id="pass" ><br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function Validate(){
+            var name=document.getElementById("name").value;
+            var password = document.getElementById("pass").value;
+
+            if(name.trim()==""){
+                alert("Please enter your name.");
+                return false;
+            }
+            var passwordRegEx=/^[a-zA-Z]*[0-9]^/;
+            if(password.passwordRegEx==""||password.length<6){
+                alert("Passwordsdjfklhsdkjfhsdkhf");
+                return false;
+            }
+
+            else{
+                alert("Login successful");
+                return true;
+            }
+            }
+        
+    </script>
+</body>
+</html>
